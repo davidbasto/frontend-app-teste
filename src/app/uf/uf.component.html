@@ -1,1 +1,13 @@
-<p>uf works!</p>
+<div class="grid-container">
+  <h1 class="mat-h1">Ufs</h1>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Ufs</mat-label>
+    <mat-select>
+      <mat-option *ngFor="let uf of ufs" [value]="uf.sigla">
+        {{uf.sigla}} - {{uf.descricao}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+</div>
